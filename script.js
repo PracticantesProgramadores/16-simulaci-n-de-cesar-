@@ -261,3 +261,18 @@ if (thanksClose) {
 
 function initCanvas() { canvas.innerHTML = ""; cambiarFondo("white") }
 initCanvas()
+
+const introModal = document.getElementById('introModal')
+const introStart = document.getElementById('introStart')
+const introDontShow = document.getElementById('introDontShow')
+function showIntro() {
+  if (localStorage.getItem('introDismissed') === '1') return
+  if (introModal) introModal.classList.remove('hidden')
+}
+if (introStart) {
+  introStart.addEventListener('click', () => {
+    if (introDontShow && introDontShow.checked) localStorage.setItem('introDismissed', '1')
+    if (introModal) introModal.classList.add('hidden')
+  })
+}
+showIntro()
