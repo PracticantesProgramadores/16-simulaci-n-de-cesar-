@@ -110,6 +110,26 @@
       <button id="downloadBtn" class="btn btn-primary">DESCARGAR MI PUBLICIDAD</button>
     </footer>
 
+    <div id="introModal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="introTitle">
+      <div class="modal-card">
+        <h3 id="introTitle">Bienvenido</h3>
+        <p>Vas a crear tu anuncio de forma sencilla. Sigue estos pasos:</p>
+        <ul>
+          <li>Elige el fondo.</li>
+          <li>Inserta emojis si quieres.</li>
+          <li>Agrega título, mensaje y botón.</li>
+          <li>Mueve los elementos y ajusta su tamaño/ancho.</li>
+          <li>Descarga la imagen en PNG.</li>
+        </ul>
+        <label style="display:flex;align-items:center;gap:8px;margin-top:8px;">
+          <input id="introDontShow" type="checkbox"> No volver a mostrar
+        </label>
+        <div class="modal-actions">
+          <button id="introStart" class="btn btn-primary">Entendido, empezar</button>
+        </div>
+      </div>
+    </div>
+
     <div id="thanksModal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="thanksTitle">
       <div class="modal-card">
         <h3 id="thanksTitle">¡Gracias por usar el constructor!</h3>
