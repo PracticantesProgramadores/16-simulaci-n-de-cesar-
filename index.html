@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Escape Publicitario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Montserrat:wght@400;700&family=Bebas+Neue&family=Roboto:wght@400;700&family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Constructor de Publicidad</h1>
+      <div class="top-actions"></div>
+    </header>
+
+    <main id="builder" class="layout">
+      <aside id="controls" class="panel sidebar">
+        <h2>Elige y edita</h2>
+        <div class="form-row">
+          <label>Fondo</label>
+          <div class="choices">
+            <button class="choice" data-bg="white">Blanco</button>
+            <button class="choice" data-bg="black">Negro</button>
+            <button class="choice" data-bg="blue">Azul</button>
+            <button class="choice" data-bg="yellow">Amarillo</button>
+            <button class="choice" data-bg="red">Rojo</button>
+            <button class="choice" data-bg="gradient">Degradado</button>
+            <button class="choice" data-bg="texture">Textura suave</button>
+          </div>
+        </div>
+        <div class="form-row">
+          <label>Emojis</label>
+          <div class="grid">
+            <div class="choices">
+              <input id="emojiInput" type="text" placeholder="Escribe o pega cualquier emoji" aria-label="Emoji">
+              <button id="addEmojiBtn" class="btn btn-primary">Insertar</button>
+            </div>
+            <div id="emojiGrid" class="emoji-grid">
+              <button class="emoji" data-emoji="😀">😀</button>
+              <button class="emoji" data-emoji="😃">😃</button>
+              <button class="emoji" data-emoji="😄">😄</button>
+              <button class="emoji" data-emoji="😁">😁</button>
+              <button class="emoji" data-emoji="😆">😆</button>
+              <button class="emoji" data-emoji="😊">😊</button>
+              <button class="emoji" data-emoji="😍">😍</button>
+              <button class="emoji" data-emoji="😉">😉</button>
+              <button class="emoji" data-emoji="🎉">🎉</button>
+              <button class="emoji" data-emoji="🔥">🔥</button>
+              <button class="emoji" data-emoji="✨">✨</button>
+              <button class="emoji" data-emoji="⭐">⭐</button>
+              <button class="emoji" data-emoji="➡️">➡️</button>
+              <button class="emoji" data-emoji="💬">💬</button>
+              <button class="emoji" data-emoji="🏷️">🏷️</button>
+              <button class="emoji" data-emoji="💡">💡</button>
+              <button class="emoji" data-emoji="📓">📓</button>
+              <button class="emoji" data-emoji="🧴">🧴</button>
+              <button class="emoji" data-emoji="🎧">🎧</button>
+              <button class="emoji" data-emoji="📱">📱</button>
+              <button class="emoji" data-emoji="🍔">🍔</button>
+              <button class="emoji" data-emoji="🎒">🎒</button>
+              <button class="emoji" data-emoji="👕">👕</button>
+              <button class="emoji" data-emoji="🛍️">🛍️</button>
+              <button class="emoji" data-emoji="🕒">🕒</button>
+              <button class="emoji" data-emoji="⚡">⚡</button>
+              <button class="emoji" data-emoji="✅">✅</button>
+              <button class="emoji" data-emoji="❗">❗</button>
+              <button class="emoji" data-emoji="📣">📣</button>
+              <button class="emoji" data-emoji="💎">💎</button>
+              <button class="emoji" data-emoji="📷">📷</button>
+              <button class="emoji" data-emoji="🖼️">🖼️</button>
+              <button class="emoji" data-emoji="🧠">🧠</button>
+              <button class="emoji" data-emoji="🎁">🎁</button>
+              <button class="emoji" data-emoji="🚀">🚀</button>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <label>Tipografía</label>
+          <select id="fontFamily">
+            <option value="Poppins">Poppins</option>
+            <option value="Montserrat">Montserrat</option>
+            <option value="Bebas Neue">Bebas Neue</option>
+            <option value="Roboto">Roboto</option>
+            <option value="Anton">Anton</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>Propiedades del texto</label>
+          <div class="grid">
+            <input id="fontSize" type="number" min="12" max="96" value="24" aria-label="Tamaño"> 
+            <input id="fontColor" type="color" value="#111827" aria-label="Color">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="choices">
+            <button id="addTitleBtn" class="choice">Agregar Título / Slogan</button>
+            <button id="addMessageBtn" class="choice">Agregar Mensaje Principal</button>
+            <button id="addCtaBtn" class="choice">Agregar Botón CTA</button>
+            <button id="deleteBtn" class="choice btn-danger">Eliminar seleccionado</button>
+          </div>
+        </div>
+      </aside>
+
+      <section id="canvasWrap" class="canvas-wrap">
+        <div id="designCanvas" class="canvas bg-light" aria-label="Lienzo de anuncio"></div>
+      </section>
+    </main>
+
+    <footer class="bottombar">
+      <button id="downloadBtn" class="btn btn-primary">DESCARGAR MI PUBLICIDAD</button>
+    </footer>
+
+    <div id="thanksModal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="thanksTitle">
+      <div class="modal-card">
+        <h3 id="thanksTitle">¡Gracias por usar el constructor!</h3>
+        <p>Tu imagen se ha descargado correctamente. ¡Éxitos con tu publicidad!</p>
+        <div class="modal-actions">
+          <button id="thanksClose" class="btn btn-primary">Entendido</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
