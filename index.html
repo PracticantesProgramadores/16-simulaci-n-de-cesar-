@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Escape Publicitario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Montserrat:wght@400;700&family=Bebas+Neue&family=Roboto:wght@400;700&family=Anton&family=Open+Sans:wght@400;700&family=Lato:wght@400;700&family=Raleway:wght@400;700&family=Oswald:wght@400;700&family=Nunito:wght@400;700&family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&family=Abril+Fatface&family=Pacifico&family=Lobster&family=Rubik:wght@400;700&family=Work+Sans:wght@400;700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Constructor de Publicidad</h1>
+      <div class="top-actions"></div>
+    </header>
+
+    <main id="builder" class="layout">
+      <aside id="controls" class="panel sidebar">
+        <h2>Elige y edita</h2>
+        <div class="form-row">
+          <label>Fondo</label>
+          <div class="choices choices-bg">
+            <button class="choice" data-bg="white">Blanco</button>
+            <button class="choice" data-bg="black">Negro</button>
+            <button class="choice" data-bg="blue">Azul</button>
+            <button class="choice" data-bg="yellow">Amarillo</button>
+            <button class="choice" data-bg="red">Rojo</button>
+            <button class="choice" data-bg="gradient">Degradado</button>
+            <button class="choice" data-bg="texture">Textura suave</button>
+            <button class="choice" data-bg="green">Verde</button>
+            <button class="choice" data-bg="purple">Morado</button>
+            <button class="choice" data-bg="orange">Naranja</button>
+            <button class="choice" data-bg="pink">Rosado</button>
+            <button class="choice" data-bg="cyan">Cian</button>
+            <button class="choice" data-bg="teal">Turquesa</button>
+            <button class="choice" data-bg="gray">Gris</button>
+            <button class="choice" data-bg="gradientSunset">Degradado Sunset</button>
+            <button class="choice" data-bg="gradientOcean">Degradado Océano</button>
+            <button class="choice" data-bg="gradientForest">Degradado Bosque</button>
+          </div>
+        </div>
+        <div class="form-row">
+          <label>Emojis</label>
+          <div class="grid">
+            <div class="choices">
+              <input id="emojiInput" type="text" placeholder="Escribe o pega cualquier emoji" aria-label="Emoji">
+              <button id="addEmojiBtn" class="btn btn-primary">Insertar</button>
+            </div>
+            <div id="emojiGrid" class="emoji-grid">
+              <button class="emoji" data-emoji="😀">😀</button>
+              <button class="emoji" data-emoji="😃">😃</button>
+              <button class="emoji" data-emoji="😄">😄</button>
+              <button class="emoji" data-emoji="😁">😁</button>
+              <button class="emoji" data-emoji="😆">😆</button>
+              <button class="emoji" data-emoji="😊">😊</button>
+              <button class="emoji" data-emoji="😍">😍</button>
+              <button class="emoji" data-emoji="😉">😉</button>
+              <button class="emoji" data-emoji="🎉">🎉</button>
+              <button class="emoji" data-emoji="🔥">🔥</button>
+              <button class="emoji" data-emoji="✨">✨</button>
+              <button class="emoji" data-emoji="⭐">⭐</button>
+              <button class="emoji" data-emoji="➡️">➡️</button>
+              <button class="emoji" data-emoji="💬">💬</button>
+              <button class="emoji" data-emoji="🏷️">🏷️</button>
+              <button class="emoji" data-emoji="💡">💡</button>
+              <button class="emoji" data-emoji="📓">📓</button>
+              <button class="emoji" data-emoji="🧴">🧴</button>
+              <button class="emoji" data-emoji="🎧">🎧</button>
+              <button class="emoji" data-emoji="📱">📱</button>
+              <button class="emoji" data-emoji="🍔">🍔</button>
+              <button class="emoji" data-emoji="🎒">🎒</button>
+              <button class="emoji" data-emoji="👕">👕</button>
+              <button class="emoji" data-emoji="🛍️">🛍️</button>
+              <button class="emoji" data-emoji="🕒">🕒</button>
+              <button class="emoji" data-emoji="⚡">⚡</button>
+              <button class="emoji" data-emoji="✅">✅</button>
+              <button class="emoji" data-emoji="❗">❗</button>
+              <button class="emoji" data-emoji="📣">📣</button>
+              <button class="emoji" data-emoji="💎">💎</button>
+              <button class="emoji" data-emoji="📷">📷</button>
+              <button class="emoji" data-emoji="🖼️">🖼️</button>
+              <button class="emoji" data-emoji="🧠">🧠</button>
+              <button class="emoji" data-emoji="🎁">🎁</button>
+              <button class="emoji" data-emoji="🚀">🚀</button>
+              <button class="emoji" data-emoji="❤️">❤️</button>
+              <button class="emoji" data-emoji="👍">👍</button>
+              <button class="emoji" data-emoji="🛒">🛒</button>
+              <button class="emoji" data-emoji="💳">💳</button>
+              <button class="emoji" data-emoji="🚚">🚚</button>
+              <button class="emoji" data-emoji="📍">📍</button>
+              <button class="emoji" data-emoji="✉️">✉️</button>
+              <button class="emoji" data-emoji="☎️">☎️</button>
+              <button class="emoji" data-emoji="🌐">🌐</button>
+              <button class="emoji" data-emoji="💰">💰</button>
+              <button class="emoji" data-emoji="💵">💵</button>
+              <button class="emoji" data-emoji="🏆">🏆</button>
+              <button class="emoji" data-emoji="🥇">🥇</button>
+              <button class="emoji" data-emoji="🎯">🎯</button>
+              <button class="emoji" data-emoji="🔔">🔔</button>
+              <button class="emoji" data-emoji="🗓️">🗓️</button>
+              <button class="emoji" data-emoji="🛠️">🛠️</button>
+              <button class="emoji" data-emoji="🎨">🎨</button>
+              <button class="emoji" data-emoji="🖍️">🖍️</button>
+              <button class="emoji" data-emoji="📦">📦</button>
+              <button class="emoji" data-emoji="🧾">🧾</button>
+              <button class="emoji" data-emoji="🧲">🧲</button>
+              <button class="emoji" data-emoji="🎬">🎬</button>
+              <button class="emoji" data-emoji="🎤">🎤</button>
+              <button class="emoji" data-emoji="📺">📺</button>
+              <button class="emoji" data-emoji="📈">📈</button>
+              <button class="emoji" data-emoji="🧪">🧪</button>
+              <button class="emoji" data-emoji="🍕">🍕</button>
+              <button class="emoji" data-emoji="☕">☕</button>
+              <button class="emoji" data-emoji="🥤">🥤</button>
+            </div>
+          </div>
+        </div>
+        <div class="form-row font-picker">
+          <label>Tipografía</label>
+          <div class="font-picker-left">
+            <select id="fontFamily">
+            <option value="Poppins">Poppins</option>
+            <option value="Montserrat">Montserrat</option>
+            <option value="Bebas Neue">Bebas Neue</option>
+            <option value="Roboto">Roboto</option>
+            <option value="Anton">Anton</option>
+            <option value="Open Sans">Open Sans</option>
+            <option value="Lato">Lato</option>
+            <option value="Raleway">Raleway</option>
+            <option value="Oswald">Oswald</option>
+            <option value="Nunito">Nunito</option>
+            <option value="Playfair Display">Playfair Display</option>
+            <option value="Merriweather">Merriweather</option>
+            <option value="Abril Fatface">Abril Fatface</option>
+            <option value="Pacifico">Pacifico</option>
+            <option value="Lobster">Lobster</option>
+            <option value="Rubik">Rubik</option>
+            <option value="Work Sans">Work Sans</option>
+            <option value="Quicksand">Quicksand</option>
+            </select>
+          </div>
+          <div class="font-picker-right">
+            <div id="fontPreviewGrid" class="font-preview-grid">
+            <button class="font-preview" data-font="Poppins"><span class="glyph">Aa</span><span class="font-label">Poppins</span></button>
+            <button class="font-preview" data-font="Montserrat"><span class="glyph">Aa</span><span class="font-label">Montserrat</span></button>
+            <button class="font-preview" data-font="Bebas Neue"><span class="glyph">Aa</span><span class="font-label">Bebas Neue</span></button>
+            <button class="font-preview" data-font="Roboto"><span class="glyph">Aa</span><span class="font-label">Roboto</span></button>
+            <button class="font-preview" data-font="Anton"><span class="glyph">Aa</span><span class="font-label">Anton</span></button>
+            <button class="font-preview" data-font="Open Sans"><span class="glyph">Aa</span><span class="font-label">Open Sans</span></button>
+            <button class="font-preview" data-font="Lato"><span class="glyph">Aa</span><span class="font-label">Lato</span></button>
+            <button class="font-preview" data-font="Raleway"><span class="glyph">Aa</span><span class="font-label">Raleway</span></button>
+            <button class="font-preview" data-font="Oswald"><span class="glyph">Aa</span><span class="font-label">Oswald</span></button>
+            <button class="font-preview" data-font="Nunito"><span class="glyph">Aa</span><span class="font-label">Nunito</span></button>
+            <button class="font-preview" data-font="Playfair Display"><span class="glyph">Aa</span><span class="font-label">Playfair</span></button>
+            <button class="font-preview" data-font="Merriweather"><span class="glyph">Aa</span><span class="font-label">Merriweather</span></button>
+            <button class="font-preview" data-font="Abril Fatface"><span class="glyph">Aa</span><span class="font-label">Abril Fatface</span></button>
+            <button class="font-preview" data-font="Pacifico"><span class="glyph">Aa</span><span class="font-label">Pacifico</span></button>
+            <button class="font-preview" data-font="Lobster"><span class="glyph">Aa</span><span class="font-label">Lobster</span></button>
+            <button class="font-preview" data-font="Rubik"><span class="glyph">Aa</span><span class="font-label">Rubik</span></button>
+            <button class="font-preview" data-font="Work Sans"><span class="glyph">Aa</span><span class="font-label">Work Sans</span></button>
+            <button class="font-preview" data-font="Quicksand"><span class="glyph">Aa</span><span class="font-label">Quicksand</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <label>Propiedades del texto</label>
+          <div class="grid">
+            <input id="fontSize" type="number" min="12" max="96" value="24" aria-label="Tamaño"> 
+            <input id="fontColor" type="color" value="#111827" aria-label="Color">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="choices">
+            <button id="addTitleBtn" class="choice">Agregar Título / Slogan</button>
+            <button id="addMessageBtn" class="choice">Agregar Mensaje Principal</button>
+            <button id="addCtaBtn" class="choice">Agregar Botón CTA</button>
+            <button id="deleteBtn" class="choice btn-danger">Eliminar seleccionado</button>
+          </div>
+        </div>
+      </aside>
+
+      <section id="canvasWrap" class="canvas-wrap">
+        <div id="designCanvas" class="canvas bg-light" aria-label="Lienzo de anuncio"></div>
+      </section>
+    </main>
+
+    <footer class="bottombar">
+      <button id="downloadBtn" class="btn btn-primary">DESCARGAR MI PUBLICIDAD</button>
+    </footer>
+
+    <div id="introModal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="introTitle">
+      <div class="modal-card intro">
+        <div class="modal-header">
+          <div class="modal-icon">🎯</div>
+          <div class="modal-heading">
+            <h3 id="introTitle">Bienvenido</h3>
+            <p class="modal-subtitle">Crea tu anuncio en minutos</p>
+          </div>
+        </div>
+        <p>Vas a crear tu anuncio de forma sencilla. Sigue estos pasos:</p>
+        <ul class="steps">
+          <li>Elige el fondo.</li>
+          <li>Inserta emojis si quieres.</li>
+          <li>Agrega título, mensaje y botón.</li>
+          <li>Mueve los elementos y ajusta su tamaño/ancho.</li>
+          <li>Descarga la imagen en PNG.</li>
+        </ul>
+        <label class="modal-check">
+          <input id="introDontShow" type="checkbox"> No volver a mostrar
+        </label>
+        <div class="modal-actions">
+          <button id="introStart" class="btn btn-primary">Entendido, empezar</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="thanksModal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="thanksTitle">
+      <div class="modal-card">
+        <h3 id="thanksTitle">¡Gracias por usar el constructor!</h3>
+        <p>Tu imagen se ha descargado correctamente. ¡Éxitos con tu publicidad!</p>
+        <div class="modal-actions">
+          <button id="thanksClose" class="btn btn-primary">Entendido</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
